@@ -1,0 +1,9 @@
+Dummy server setup
+-----------------------
+npm install json-server --save-dev ->put this in package.json-> inside scripr-> "server-json": "json-server --watch products.json --port 3002"
+then in terminal-> npm run server-json
+
+Toaster
+----------------
+npm install react-hot-toast
+

@@ -1,0 +1,290 @@
+{
+  "categories": [
+    { "id": 1, "name": "Electronics" },
+    { "id": 2, "name": "Clothing" },
+    { "id": 3, "name": "Home & Kitchen" },
+    { "id": 4, "name": "Sports" },
+    { "id": 5, "name": "Books" }
+  ],
+  "products": [
+    {
+      "id": 101,
+      "name": "Wireless Bluetooth Headphones",
+      "categoryId": 1,
+      "price": 59.99,
+      "currency": "USD",
+      "stock": 120,
+      "rating": 4.5,
+      "image": "https://images.unsplash.com/photo-1516706345531-883ff3b5341c?auto=format&fit=crop&w=200&q=80",
+      "description": "Over-ear noise-cancelling headphones with 20h battery."
+    },
+    {
+      "id": 102,
+      "name": "Smartphone 6.5-inch Display",
+      "categoryId": 1,
+      "price": 499.99,
+      "currency": "USD",
+      "stock": 50,
+      "rating": 4.6,
+      "image": "https://images.pexels.com/photos/607812/pexels-photo-607812.jpeg?auto=compress&cs=tinysrgb&h=200",
+      "description": "High-performance smartphone with AMOLED display."
+    },
+    {
+      "id": 103,
+      "name": "4K Ultra HD Smart TV",
+      "categoryId": 1,
+      "price": 899.99,
+      "currency": "USD",
+      "stock": 30,
+      "rating": 4.8,
+      "image": "https://burst.shopifycdn.com/photos/hands-touching-tv.jpg?auto=format&fit=crop&w=200&q=80",
+      "description": "55-inch 4K Smart TV with HDR support."
+    },
+    {
+      "id": 104,
+      "name": "Laptop 15-inch, 16 GB RAM",
+      "categoryId": 1,
+      "price": 1099.99,
+      "currency": "USD",
+      "stock": 25,
+      "rating": 4.7,
+      "image": "https://images.unsplash.com/photo-1517336714731-489689fd1ca8?auto=format&fit=crop&w=200&q=80",
+      "description": "Lightweight laptop with long battery life."
+    },
+    {
+      "id": 105,
+      "name": "Gaming Mouse RGB",
+      "categoryId": 1,
+      "price": 39.99,
+      "currency": "USD",
+      "stock": 200,
+      "rating": 4.4,
+      "image": "https://images.pexels.com/photos/715688/pexels-photo-715688.jpeg?auto=compress&cs=tinysrgb&h=200",
+      "description": "Ergonomic gaming mouse with programmable buttons."
+    },
+
+    {
+      "id": 106,
+      "name": "Men's Cotton T-Shirt",
+      "categoryId": 2,
+      "price": 15.99,
+      "currency": "USD",
+      "stock": 250,
+      "rating": 4.2,
+      "image": "https://burst.shopifycdn.com/photos/flat-lay-red-tshirt.jpg?auto=format&fit=crop&w=200&q=80",
+      "description": "Soft cotton t-shirt available in multiple colors."
+    },
+    {
+      "id": 107,
+      "name": "Women's Denim Jacket",
+      "categoryId": 2,
+      "price": 49.99,
+      "currency": "USD",
+      "stock": 80,
+      "rating": 4.5,
+      "image": "https://images.unsplash.com/photo-1568605114967-8130f3a36994?auto=format&fit=crop&w=200&q=80",
+      "description": "Classic denim jacket for casual wear."
+    },
+    {
+      "id": 108,
+      "name": "Men's Running Shoes",
+      "categoryId": 2,
+      "price": 69.99,
+      "currency": "USD",
+      "stock": 100,
+      "rating": 4.6,
+      "image": "https://images.pexels.com/photos/19090/pexels-photo.jpg?auto=compress&cs=tinysrgb&h=200",
+      "description": "Lightweight shoes for running and gym workouts."
+    },
+    {
+      "id": 109,
+      "name": "Women's Handbag",
+      "categoryId": 2,
+      "price": 89.99,
+      "currency": "USD",
+      "stock": 60,
+      "rating": 4.3,
+      "image": "https://burst.shopifycdn.com/photos/black-handbag-on-pink.jpg?auto=format&fit=crop&w=200&q=80",
+      "description": "Stylish leather handbag with adjustable strap."
+    },
+    {
+      "id": 110,
+      "name": "Men's Formal Shirt",
+      "categoryId": 2,
+      "price": 29.99,
+      "currency": "USD",
+      "stock": 150,
+      "rating": 4.4,
+      "image": "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=200&q=80",
+      "description": "Slim-fit formal shirt for office wear."
+    },
+
+    {
+      "id": 111,
+      "name": "Stainless Steel Water Bottle",
+      "categoryId": 3,
+      "price": 22.5,
+      "currency": "USD",
+      "stock": 80,
+      "rating": 4.7,
+      "image": "https://images.pexels.com/photos/450326/pexels-photo-450326.jpeg?auto=compress&cs=tinysrgb&h=200",
+      "description": "Keeps beverages hot for 12 h and cold for 24 h."
+    },
+    {
+      "id": 112,
+      "name": "Non-stick Frying Pan",
+      "categoryId": 3,
+      "price": 25.99,
+      "currency": "USD",
+      "stock": 90,
+      "rating": 4.5,
+      "image": "https://burst.shopifycdn.com/photos/pan-cooking.jpg?auto=format&fit=crop&w=200&q=80",
+      "description": "Durable non-stick frying pan with heat-resistant handle."
+    },
+    {
+      "id": 113,
+      "name": "Ceramic Dinner Set – 16 Pieces",
+      "categoryId": 3,
+      "price": 79.99,
+      "currency": "USD",
+      "stock": 40,
+      "rating": 4.6,
+      "image": "https://images.unsplash.com/photo-1541544181955-9bcb79c1e410?auto=format&fit=crop&w=200&q=80",
+      "description": "Elegant dinner set for family meals."
+    },
+    {
+      "id": 114,
+      "name": "Electric Kettle",
+      "categoryId": 3,
+      "price": 29.99,
+      "currency": "USD",
+      "stock": 120,
+      "rating": 4.5,
+      "image": "https://images.pexels.com/photos/207228/pexels-photo-207228.jpeg?auto=compress&cs=tinysrgb&h=200",
+      "description": "1.5 L electric kettle with auto shut-off."
+    },
+    {
+      "id": 115,
+      "name": "Vacuum Cleaner",
+      "categoryId": 3,
+      "price": 149.99,
+      "currency": "USD",
+      "stock": 35,
+      "rating": 4.7,
+      "image": "https://burst.shopifycdn.com/photos/vacuum-cleaner.jpg?auto=format&fit=crop&w=200&q=80",
+      "description": "High-suction vacuum cleaner with HEPA filter."
+    },
+
+    {
+      "id": 116,
+      "name": "Yoga Mat",
+      "categoryId": 4,
+      "price": 18.99,
+      "currency": "USD",
+      "stock": 150,
+      "rating": 4.3,
+      "image": "https://images.unsplash.com/photo-1583454110554-21de9c13b3aa?auto=format&fit=crop&w=200&q=80",
+      "description": "Non-slip yoga mat ideal for all types of exercises."
+    },
+    {
+      "id": 117,
+      "name": "Dumbbell Set 20 kg",
+      "categoryId": 4,
+      "price": 79.99,
+      "currency": "USD",
+      "stock": 50,
+      "rating": 4.6,
+      "image": "https://images.pexels.com/photos/206946/pexels-photo-206946.jpeg?auto=compress&cs=tinysrgb&h=200",
+      "description": "Adjustable dumbbell set for home workouts."
+    },
+    {
+      "id": 118,
+      "name": "Tennis Racket",
+      "categoryId": 4,
+      "price": 59.99,
+      "currency": "USD",
+      "stock": 70,
+      "rating": 4.4,
+      "image": "https://burst.shopifycdn.com/photos/tennis-racket.jpg?auto=format&fit=crop&w=200&q=80",
+      "description": "Lightweight racket with excellent grip."
+    },
+    {
+      "id": 119,
+      "name": "Camping Tent 4-Person",
+      "categoryId": 4,
+      "price": 129.99,
+      "currency": "USD",
+      "stock": 25,
+      "rating": 4.7,
+      "image": "https://images.unsplash.com/photo-1504280390367-361c6d9f38a3?auto=format&fit=crop&w=200&q=80",
+      "description": "Waterproof tent suitable for all seasons."
+    },
+    {
+      "id": 120,
+      "name": "Football",
+      "categoryId": 4,
+      "price": 24.99,
+      "currency": "USD",
+      "stock": 90,
+      "rating": 4.5,
+      "image": "https://images.pexels.com/photos/3991872/pexels-photo-3991872.jpeg?auto=compress&cs=tinysrgb&h=200",
+      "description": "Durable football with great grip."
+    },
+
+    {
+      "id": 121,
+      "name": "The Great Gatsby",
+      "categoryId": 5,
+      "price": 9.99,
+      "currency": "USD",
+      "stock": 200,
+      "rating": 4.4,
+      "image": "https://images.unsplash.com/photo-1512820790803-83ca734da794?auto=format&fit=crop&w=200&q=80",
+      "description": "Classic novel by F. Scott Fitzgerald."
+    },
+    {
+      "id": 122,
+      "name": "Atomic Habits",
+      "categoryId": 5,
+      "price": 14.99,
+      "currency": "USD",
+      "stock": 180,
+      "rating": 4.8,
+      "image": "https://images.pexels.com/photos/590493/pexels-photo-590493.jpeg?auto=compress&cs=tinysrgb&h=200",
+      "description": "Best-selling self-help book by James Clear."
+    },
+    {
+      "id": 123,
+      "name": "Clean Code",
+      "categoryId": 5,
+      "price": 34.99,
+      "currency": "USD",
+      "stock": 50,
+      "rating": 4.9,
+      "image": "https://burst.shopifycdn.com/photos/book-clean-code.jpg?auto=format&fit=crop&w=200&q=80",
+      "description": "A handbook of agile software craftsmanship."
+    },
+    {
+      "id": 124,
+      "name": "Harry Potter Box Set",
+      "categoryId": 5,
+      "price": 79.99,
+      "currency": "USD",
+      "stock": 40,
+      "rating": 4.9,
+      "image": "https://images.unsplash.com/photo-1524985069026-dd778a71c7b4?auto=format&fit=crop&w=200&q=80",
+      "description": "Complete 7-book series by J.K. Rowling."
+    },
+    {
+      "id": 125,
+      "name": "The Lean Startup",
+      "categoryId": 5,
+      "price": 19.99,
+      "currency": "USD",
+      "stock": 70,
+      "rating": 4.7,
+      "image": "https://images.pexels.com/photos/3184752/pexels-photo-3184752.jpeg?auto=compress&cs=tinysrgb&h=200",
+      "description": "Guide to building startups by Eric Ries."
+    }
+  ]
+}
