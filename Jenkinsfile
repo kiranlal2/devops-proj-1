@@ -1,10 +1,6 @@
 pipeline {
     agent any
 
-    tools {
-        nodejs "nodejs"
-    }
-
     environment {
         DEPLOY_SERVER = "51.20.65.66"
         DEPLOY_USER   = "ubuntu"
@@ -13,7 +9,7 @@ pipeline {
     }
 
     stages {
-        stage('Clone Repo') {
+        stage('Checkout') {
             steps {
                 git branch: 'main', url: 'https://github.com/kiranlal2/devops-proj-1.git'
             }
@@ -21,7 +17,11 @@ pipeline {
 
         stage('Install Dependencies') {
             steps {
-                sh 'npm install'
+                sh '''
+                  node -v
+                  npm -v
+                  npm install
+                '''
             }
         }
 
@@ -34,11 +34,16 @@ pipeline {
         stage('Deploy to EC2') {
             steps {
                 sh '''
+                  # Ensure Jenkins can read PEM
+                  chmod 600 ${PEM_KEY}
+
+                  # Prepare folder on EC2
                   ssh -o StrictHostKeyChecking=no -i ${PEM_KEY} ${DEPLOY_USER}@${DEPLOY_SERVER} "
                     sudo mkdir -p ${APP_DIR} &&
                     sudo rm -rf ${APP_DIR}/*
                   "
 
+                  # Copy build artifacts
                   scp -o StrictHostKeyChecking=no -i ${PEM_KEY} -r package.json .next public ${DEPLOY_USER}@${DEPLOY_SERVER}:${APP_DIR}/
                 '''
             }
