@@ -5,6 +5,13 @@ pipeline {
         nodejs "nodejs"
     }
 
+    environment {
+        DEPLOY_SERVER = "51.20.65.66"
+        DEPLOY_USER   = "ubuntu"
+        PEM_KEY       = "/var/lib/jenkins/kiranlal-jenkins-server.pem"
+        APP_DIR       = "/var/www/nextapp"
+    }
+
     stages {
         stage('Clone Repo') {
             steps {
@@ -27,11 +34,25 @@ pipeline {
         stage('Deploy to EC2') {
             steps {
                 sh '''
-                  ssh -o StrictHostKeyChecking=no -i /var/lib/jenkins/kiranlal-jenkins-server.pem ubuntu@51.20.65.66 "
-                    sudo rm -rf /var/www/nextapp/*
-                    mkdir -p /var/www/nextapp
+                  ssh -o StrictHostKeyChecking=no -i ${PEM_KEY} ${DEPLOY_USER}@${DEPLOY_SERVER} "
+                    sudo mkdir -p ${APP_DIR} &&
+                    sudo rm -rf ${APP_DIR}/*
                   "
-                  scp -i /var/lib/jenkins/kiranlal-jenkins-server.pem -r .next/* ubuntu@51.20.65.66:/var/www/nextapp/
+
+                  scp -o StrictHostKeyChecking=no -i ${PEM_KEY} -r package.json .next public ${DEPLOY_USER}@${DEPLOY_SERVER}:${APP_DIR}/
+                '''
+            }
+        }
+
+        stage('Start App on EC2') {
+            steps {
+                sh '''
+                  ssh -o StrictHostKeyChecking=no -i ${PEM_KEY} ${DEPLOY_USER}@${DEPLOY_SERVER} "
+                    cd ${APP_DIR} &&
+                    npm install --production &&
+                    pm2 delete nextapp || true &&
+                    pm2 start npm --name 'nextapp' -- start
+                  "
                 '''
             }
         }
